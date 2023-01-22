@@ -62,7 +62,7 @@ html, body {
 .fp-controlArrow {
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 57%;
     cursor: pointer;
     width: 0;
     height: 0;
@@ -73,15 +73,15 @@ html, body {
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    left: 05px;
     width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-width: 10.5px 10.5px 9px 0;
+    border-color: transparent #E3FC02 transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+   right: 05px;
+    border-width: 10.5px 0 10.5px 9px;
+    border-color: transparent transparent transparent #E3FC02;
 }
 .fp-scrollable {
     overflow: scroll;

@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Alejandro Cabrera - Portfolio</title>
+		<title>Alejandro Cabrera | Web Development Front-End</title>
 		<link rel="shortcut icon" href='images\favicon.png' type="image/png">
-		<meta name="keywords" content="">
-		<meta name="description" content="">
-        <meta name="author" content="templatemo">
+		<meta name="keywords" content="HTML, CSS, JavaScript, Shopify">
+		<meta name="description" content="Portfolio web development of ALejandro Cabrera">
+        <meta name="author" content="Alejandro Cabrera">
         <!-- 
         Lavish HTML CSS Template
         https://templatemo.com/tm-458-lavish
@@ -20,7 +20,8 @@
 		<!-- animate -->
 		<link rel="stylesheet" href="css/animate.min.css">
 		<!-- bootstrap -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 		<!-- font-awesome -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- google font -->
@@ -29,12 +30,37 @@
 		<link rel="stylesheet" href="css/jquery.fullPage.css">
 		<!-- custom -->
 		<link rel="stylesheet" href="css/templatemo-style.css">
+		<link rel="stylesheet" href="css/style.css">
 
 	</head>
 	<body>
-
+     <!-- Navigation-bar -->
+	 <nav class="navbar navbar-expand-md customization-bar" id="nav-bar-custom">
+		<div class="container-fluid">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbar-toggler">
+			<a class="navbar-brand" href="#work">
+				<img class="image-perfil rounded-circle" src="images/main.jpg" width="50" alt="Image logo">
+			</a>
+			<ul class="navbar-nav d-flex justify-content-center align-items-center">
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="#about">About me</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#portfolio">Projects</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			  </li>
+			</ul>
+			
+		  </div>
+		</div>
+	  </nav>
 	<div id="fullpage">
-
+       
 		<!-- start home -->
 		<div id="home" class="section">
 			<div class="container">
@@ -44,7 +70,7 @@
 						<h3>"HELLO, I AM..."</h3>
 						<h1>ALEJANDRO CABRERA</h1>
 						<h2 class="rotate">E-COMMERCE DEVELOPER, SHOPIFY EXPERT, UI DEVELOPER</h2>
-						<p>My goal help eCommerce businesses sell as much as possible online using Shopify.
+						<p>My goal is to help eCommerce businesses with website development to sell as much as possible online using Shopify.
 						</p>
 						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Get started</a>
 					</div>
@@ -110,19 +136,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
-						<h2>ABOUT CABRERA</h2>
+						<h2>ABOUT A. CABRERA</h2>
 						<h4>DESIGNER &AMP; DEVELOPER</h4>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
 						<p>Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 					</div>
 					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
-						<span class="text-top">Web Design <small>95%</small></span>
+						<span class="text-top">Web Development <small>90%</small></span>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
 							</div>
-						<span>Mobile Apps <small>80%</small></span>
+						<span>Shopify <small>95%</small></span>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
 							</div>
 						<span>SEO Stuffs <small>70%</small></span>
 							<div class="progress">
@@ -143,36 +169,67 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="wow bounce">PORTFOLIO</h2>
+					<h2 class="wow bounce">PROJECTS</h2>
 				</div>
 				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/MountainBikeWorld-1.jpg" class="img-responsive" alt="portfolio img">
+						<div class="slider">
+							<!--<span id="slide-1"></span>
+							<span id="slide-2"></span>
+							<span id="slide-3"></span>
+							<span id="slide-4"></span>-->
+							<div class="image-container">
+								<img src="images/MountainBikeWorld-1.jpg" class="slide" class="img-responsive">
+								<img src="images/MountainBikeWorld-2.jpg" class="slide" class="img-responsive">
+								<img src="images/MountainBikeWorld-3.jpg" class="slide" class="img-responsive">
+								<img src="images/MountainBikeWorld-4.jpg" class="slide" class="img-responsive">
+							</div>
+							<!--<div class="buttons">
+								<a href="#slide-1"></a>
+								<a href="#slide-2"></a>
+								<a href="#slide-3"></a>
+								<a href="#slide-4"></a>
+							</div>-->
+							<!--	<div class="portfolio-overlay">
+									<h4>Web Design</h4>
+									<h5>Author: Alejandro</h5>
+								</div>
+							-->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+					<img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img">
 							<div class="portfolio-overlay">
-								<h4>Web Design</h4>
+								<h4>Shopify Stores</h4>
 								<h5>Author: Alejandro</h5>
 							</div>
 					</div>
 				</div>
 				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-								<h4>Web App</h4>
-								<h5>Author: Linda</h5>
-							</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
+						<!--<img src="images/Por la libre 1.jpg" class="img-responsive" alt="portfolio img">-->
+							<!--<div class="portfolio-overlay">
 								<h4>Mobile App</h4>
 								<h5>Author: Kate</h5>
-							</div>
+							</div>-->
+							
+							<div class="slider-2">
+
+								<div class="image-container-2">
+									<img src="images/Por la libre 1.jpg" class="slide-2" class="img-responsive">
+									<img src="images/Por la libre 2.jpg" class="slide-2" class="img-responsive">
+									<img src="images/Por la libre 3.jpg" class="slide-2" class="img-responsive">
+									<img src="images/Por la libre 4.jpg" class="slide-2" class="img-responsive">
+								
+							    </div>
+
+							</div>	
+								
 					</div>
 				</div>
-				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+				<!--<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
 						<img src="images/portfolio-img4.jpg" class="img-responsive" alt="portfolio img">
 							<div class="portfolio-overlay">
@@ -180,8 +237,8 @@
 								<h5>Author: Catherine</h5>
 							</div>
 					</div>
-				</div>
-				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+				</div>-->
+				<!--<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
 						<img src="images/portfolio-img5.jpg" class="img-responsive" alt="portfolio img">
 							<div class="portfolio-overlay">
@@ -189,7 +246,7 @@
 								<h5>Author: Kathy</h5>
 							</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
@@ -246,7 +303,8 @@
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
+		<!-- <script src="js/bootstrap.min.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 		<!-- fullpage -->
 		<script src="js/jquery.fullPage.js"></script>
 		<!-- smoothScroll -->
@@ -257,6 +315,11 @@
 		<script src="js/jquery.simple-text-rotator.js"></script>
 		<!-- custom -->
 		<script src="js/custom.js"></script>
+
+
+
+
+
 
 	</body>
 </html>

@@ -1,0 +1,40 @@
+.image-perfil{
+    height: 60px;
+    width: 60px;
+}
+
+/* Barra de navegacion */
+
+.customization-bar{
+    background-color: #D43F52;
+    /* margin: 0px; */
+    padding: 0.5rem;
+}
+
+.nav-link{
+    color:#ffffff;
+}
+
+.nav-link:hover{
+    color:#ffffff;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+h1, h2, h3{
+    font-size: 1.1rem;
+}
+
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
