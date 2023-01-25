@@ -46,6 +46,17 @@ h1, h2, h3{
 }
 
 
+
+/* icons what I do */
+
+.media-object, .media-body{
+    text-align: center;
+}
+
+.media-object{
+    margin-bottom: 20px;
+}
+
 /* Adaptable (Responsivo) */
 
 @media screen and (max-width:767px){
