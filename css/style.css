@@ -6,9 +6,26 @@
 /* Barra de navegacion */
 
 .customization-bar{
-    background-color: #D43F52;
+    background-color: none;   
+    position: sticky;
+    /* background-color: #D43F52; */
     /* margin: 0px; */
     padding: 0.5rem;
+}
+
+.bi-list{
+    color: #ffffff;
+    font-size: xx-large;
+}
+
+.navbar-toggler{
+    border: 2px solid #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #D43F52;
+    border-color: transparent;
 }
 
 .nav-link{
@@ -36,5 +53,10 @@ h1, h2, h3{
 @media screen and (max-width:767px){
     .navbar-brand{
         display: none;
+    }
+
+    .navbar-toggler-icon{
+        background-color: #ffffff;
+        border-color: #ffffff;
     }
 }
