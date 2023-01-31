@@ -6,19 +6,16 @@
 /* Barra de navegacion */
 
 .customization-bar{
-    background-color: none;   
     position: sticky;
     padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
-.bi-list{
-    color: #ffffff;
-    font-size: xx-large;
-}
 
 .navbar-toggler{
     border: 2px solid #ffffff;
     transition: all 0.4s ease-in-out;
+    color: #ffffff;
 }
 
 .btn:hover{
@@ -39,6 +36,10 @@
     justify-content: space-between;
 }
 
+.nav-link:focus, .nav-link:hover {
+    color: #fff;
+    font-weight: 600;
+}
 
 
 h1, h2, h3{
@@ -61,6 +62,85 @@ h1, h2, h3{
 #fp-nav{
     display: none;
 }
+
+/* CSS portfolio */
+
+.image-container img{
+   height: 100%;
+   width: 100%;
+   /* padding: 10px; */
+   border-radius: 10px;
+   display: block;
+}
+
+
+.fancy-gallery{
+    display: none;
+}
+
+/* fancybox */
+.carousel{
+    transition: transform .2s
+}
+.carousel:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+#mainCarousel {
+    /* width: 600px; */
+    /* margin: 0 auto 1rem auto; */
+  
+    --carousel-button-color: #170724;
+    --carousel-button-bg: #fff;
+    --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+      0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2.5;
+  }
+  
+  #mainCarousel .carousel__slide {
+    /* width: 100%; */
+    padding: 0;
+  }
+  
+  #mainCarousel .carousel__button.is-prev {
+    left: -1.5rem;
+  }
+  
+  #mainCarousel .carousel__button.is-next {
+    right: -1.5rem;
+  }
+  
+  #mainCarousel .carousel__button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #A78BFA;
+  }
+  
+  #thumbCarousel .carousel__slide {
+    opacity: 0.5;
+    padding: 0;
+    margin: 0.25rem;
+    width: 96px;
+    height: 64px;
+  }
+  
+  #thumbCarousel .carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  #thumbCarousel .carousel__slide.is-nav-selected {
+    opacity: 1;
+  }
+
+  .second{
+    display: none;
+  }
 
 /* Adaptable (Responsivo) */
 
