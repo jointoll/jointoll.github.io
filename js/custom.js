@@ -35,6 +35,24 @@ const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
 	slidesPerPage: 1,
 	infinite: false,
   });
+
+  const mainCarousel_2 = new Carousel(document.querySelector("#mainCarousel_2"), {
+	Dots: false,
+  });
+  
+  // Thumbnails
+  const thumbCarousel_2 = new Carousel(document.querySelector("#thumbCarousel_2"), {
+	Sync: {
+	  target: mainCarousel_2,
+	  friction: 0,
+	},
+	Dots: false,
+	Navigation: false,
+	center: true,
+	slidesPerPage: 1,
+	infinite: false,
+  });
+  
   
   // Customize Fancybox
   Fancybox.bind('[data-fancybox="gallery"]', {
@@ -42,6 +60,19 @@ const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
 	  on: {
 		change: (that) => {
 		  mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+			friction: 0,
+		  });
+		},
+	  },
+	},
+  });
+
+
+  Fancybox.bind('[data-fancybox="gallery02"]', {
+	mainCarousel_2: {
+	  on: {
+		change: (that) => {
+		  mainCarousel_2.slideTo(mainCarousel_2.findPageForSlide(that.page), {
 			friction: 0,
 		  });
 		},
