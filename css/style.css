@@ -209,3 +209,90 @@ h1, h2, h3{
 }
 
 }
+
+/* Confirmation Popup */
+.Overlay {
+  Position: Fixed;
+  Top: 0;
+  Bottom: 0;
+  Left: 0;
+  Right: 0;
+  Background: Rgba(0, 0, 0, 0.7);
+  Transition: Opacity 500ms;
+  Visibility: Hidden;
+  Opacity: 0;
+}
+.Overlay:target {
+  Visibility: Visible;
+  Opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  Padding: 20px;
+  Background: black;
+  opacity: 0.95;
+  border: 1px solid#ffffff;
+  Border-Radius: 10px;
+  Width: 30%;
+  text-align: center;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button{
+  width: 20%;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.popup button:hover{
+  background-color: #D43F52;
+}
+
+.content{
+  margin-bottom: 15px;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.popup .close {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #D43F52;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/*Let's make it appear when the page loads*/
+
+@media screen and (max-width: 768px){
+  .box{
+    width: 70%;
+  }
+  .overlay .popup{
+    width: 70%;
+    left: 15%;
+  }
+}

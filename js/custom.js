@@ -79,3 +79,4 @@ const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
 	  },
 	},
   });
+

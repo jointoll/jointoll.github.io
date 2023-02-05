@@ -293,17 +293,34 @@
 
 								<!-- Disable Captcha -->
 								<input type="hidden" name="_captcha" value="false">
+
+								<input type="hidden" name="_next" value="#popup1">
 							
-								<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-								<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
-								<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
-								<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
-							</form>
+								<input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required onkeyup="enableSubmit()">
+								<input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required onkeyup="enableSubmit()">
+								<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message" required onkeyup="enableSubmit()"></textarea>
+								<input name="send" type="submit" class="form-control" onclick="openPopup()" id="send" value="SEND ME" disabled>							
+							</form>					
+
 						</div>
 						<div class="col-md-1 col-sm-1"></div>
 					</div>
+
+						<!-- confirmation popup -->
+									
+					<div class="popup" id="popup1">
+						<h2>Confirmed!</h2>
+						<a class="close" href="#contact" onclick="closePopup()">&times;</a>
+						<div class="content">
+							Thank you for contacting me, I have received your message, I will reply as soon as possible.
+						</div>
+						<button type="button" onclick="closePopup()">OK!</button>
+					</div>
 				</div>
 			</div>
+
+		
+		  
 			<!-- end contact -->
 
 			<!-- start footer -->
@@ -340,5 +357,35 @@
 			$('.navbar-collapse').collapse('hide');
 			});
 		</script>
+
+        <!-- confirmation popup for contact submit -->
+		<script>
+			let popup = document.getElementById("popup1");
+
+			function openPopup(){
+				popup.classList.add("open-popup");
+			}
+
+			function closePopup(){
+				popup.classList.remove("open-popup");
+			}
+		</script>
+
+		<!-- Send me button disable until all fields are filled -->
+		<script>
+			function enableSubmit(){
+			let inputs = document.getElementsByClassName('form-control'); // Enter your class name for a required field, this should also be reflected within your form fields.
+			let btn = document.querySelector('input[type="submit"]');
+			let isValid = true;
+			for (var i = 0; i < inputs.length; i++){
+				let changedInput = inputs[i];
+				if (changedInput.value.trim() === "" || changedInput.value === null){
+						isValid = false;
+						break;
+					}
+				}
+				btn.disabled = !isValid;
+			}
+			</script>
 	</body>
 </html>
