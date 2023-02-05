@@ -132,6 +132,9 @@ h1, h2, h3{
     cursor: pointer;
     opacity: 0.9;
     transform: scale(1.05);
+    box-shadow: 1px 1px 9px #D43F52;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
 }
 #mainCarousel {
     /* width: 600px; */
