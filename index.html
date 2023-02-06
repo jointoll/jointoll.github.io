@@ -25,9 +25,9 @@
 		<!-- google font -->
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
 		<!-- Fancybox CSS -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
 		<!-- custom -->
 		<link rel="stylesheet" href="css/templatemo-style.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -176,7 +176,7 @@
 			<!-- start portfolio -->
 			<div id="portfolio" class="section">
 			<div class="container">
-				<div class="row">
+				<div class="row justify-content-center">
 					<div class="col-md-12">
 						<h2 class="wow bounce">PROJECTS</h2>
 					</div>
@@ -218,7 +218,7 @@
 							</div>
 					</div>
 
-					<div class="col-md-4 col-xs-6">
+					<!-- <div class="col-md-4 col-xs-6">
 						<div class="portfolio-thumb image-container">
 							<img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img">
 									<div class="portfolio-overlay">
@@ -226,7 +226,7 @@
 										<h5>Author: Alejandro</h5>
 									</div>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="col-md-4 col-xs-6">
 						<div id="mainCarousel_2" class="carousel portfolio-thumb image-container">
@@ -281,25 +281,34 @@
 						<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
 							<address>
 								<p class="contact-title">CONTACT ME</p>
-								<p><i class="fa fa-phone"></i> 732-771-9306</p>
-								<p><i class="fa bi-envelope-fill"></i> info@company.com</p>
-								<p><i class="fa fa-map-marker"></i> 475 Smith St, Perth Amboy NJ 08861</p>
+								<p><i class="fa bi-envelope-fill"></i>info@company.com</p>
+								<p><i class="fa fa-map-marker"></i>Perth Amboy NJ 08861</p>
 							</address>
 						</div>
 						<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
-							<form role="form" method="post" action="https://formsubmit.co/8708e0e5ec7c319500caf43337b3ee23" method="POST">
+							<!-- <form role="form" method="post" action="https://formsubmit.co/8708e0e5ec7c319500caf43337b3ee23" method="POST"> -->
+							<form>
 								<!-- Honeypot		 -->
 								<input type="text" name="_honey" style="display: none;">
 
 								<!-- Disable Captcha -->
 								<input type="hidden" name="_captcha" value="false">
 
-								<input type="hidden" name="_next" value="https://jointoll.github.io/index.html#contact">
+								<input type="hidden" name="_next" value="https://jointoll.github.io/index.html#popup1">
 							
-								<input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required onkeyup="enableSubmit()">
-								<input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required onkeyup="enableSubmit()">
-								<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message" onkeyup="enableSubmit()"></textarea>
-								<input name="send" type="submit" class="form-control" onclick="openPopup()" id="send" value="SEND ME" disabled>							
+								<div class="form-floating mb-3">
+									<input type="name" class="form-control" id="name" placeholder="Your Name" required onkeyup="enableSubmit()">
+									<label for="name">Name</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="email" class="form-control" id="email" placeholder="Email" required onkeyup="enableSubmit()">
+									<label for="email">Email</label>
+								</div>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Message" id="message" style="height: 100px"></textarea>
+									<label for="message">Message</label>
+								</div>
+								<input name="send" type="submit" class="form-control" id="send" value="SEND ME" disabled>							
 							</form>					
 
 						</div>
@@ -309,12 +318,12 @@
 						<!-- confirmation popup -->
 									
 					<div class="popup" id="popup1">
-						<h2>Confirmed!</h2>
-						<a class="close" href="#contact" onclick="closePopup()">&times;</a>
+						<h2 class="header">Confirmed!</h2>
+						<a class="close" href="#">&times;</a>
 						<div class="content">
 							Thank you for contacting me, I have received your message, I will reply as soon as possible.
 						</div>
-						<button type="button" onclick="closePopup()">OK!</button>
+						<button type="button" class="confirm">OK!</button>
 					</div>
 				</div>
 			</div>
@@ -348,7 +357,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<!-- bootstrap -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-		
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<!-- custom -->
 		<script src="js/custom.js"></script>
 		
@@ -356,19 +365,6 @@
 			$('.js-scroll-trigger').click(function() {
 			$('.navbar-collapse').collapse('hide');
 			});
-		</script>
-
-        <!-- confirmation popup for contact submit -->
-		<script>
-			let popup = document.getElementById("popup1");
-
-			function openPopup(){
-				popup.classList.add("open-popup");
-			}
-
-			function closePopup(){
-				popup.classList.remove("open-popup");
-			}
 		</script>
 
 		<!-- Send me button disable until all fields are filled -->
