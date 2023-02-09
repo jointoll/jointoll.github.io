@@ -308,7 +308,7 @@
 									<textarea class="form-control" placeholder="Message" id="message" style="height: 100px" onkeyup="enableSubmit()"></textarea>
 									<label for="message">Message</label>
 								</div>
-								<input name="send" type="submit" class="form-control" id="send" value="SEND ME" disabled>							
+								<input name="send" type="submit" class="form-control" id="send" value="SEND ME" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>							
 							</form>					
 
 						</div>
@@ -317,14 +317,38 @@
 
 						<!-- confirmation popup -->
 									
-					<div class="popup" id="popup1">
+					<!-- <div class="popup" id="popup1">
 						<h2 class="header">Confirmed!</h2>
 						<a class="close" href="#">&times;</a>
 						<div class="content">
 							Thank you for contacting me, I have received your message, I will reply as soon as possible.
 						</div>
 						<button type="button" class="confirm">OK!</button>
-					</div>
+					</div> -->
+                     
+                     <!-- Button trigger modal -->
+						<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+							Launch static backdrop modal
+						</button> -->
+						
+						<!-- Modal -->
+						<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2 class="header"></h2>
+									<button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+										<div class="modal-body content"></div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary confirm" data-bs-dismiss="modal">Confirm!</button>
+								</div>
+							</div>
+							</div>
+						</div>
+
+
+
 				</div>
 			</div>
 

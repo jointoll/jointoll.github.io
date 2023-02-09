@@ -212,6 +212,28 @@ h1, h2, h3{
 
 }
 
+
+/* modal properties */
+
+.modal .btn{
+  background-color: #D43F52;
+  border-color: transparent;
+}
+
+.modal .content{
+     max-height: 30%;
+     overflow: auto;
+     text-align: center;
+}
+.modal .header{
+  color: #170724;
+}
+
+.modal-footer{
+  justify-content: center;
+}
+
+
 /* Confirmation Popup */
 .Overlay {
   Position: Fixed;
@@ -272,7 +294,7 @@ h1, h2, h3{
     color: #ffffff;
 }
 
-.popup .close {
+/* .popup .close {
   position: absolute;
   top: 0px;
   right: 20px;
@@ -285,11 +307,11 @@ h1, h2, h3{
 .popup .content {
   max-height: 30%;
   overflow: auto;
-}
+} */ 
 
 /*Let's make it appear when the page loads*/
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
   .box{
     width: 70%;
   }
@@ -297,4 +319,6 @@ h1, h2, h3{
     width: 70%;
     left: 15%;
   }
-}
+} */
+
+

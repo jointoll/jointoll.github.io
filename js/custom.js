@@ -80,29 +80,31 @@ navLinks.forEach(link => {
 // 	},
 //   });
 
-let popup = document.getElementById("popup1");
-function openPopup(){
-	popup.classList.add("open-popup");
-}
-function closePopup(){
-	popup.classList.remove("open-popup");
-}
+// let popup = document.getElementById("popup1");
+let popup = document.getElementById("staticBackdrop");
+
+// function openPopup(){
+// 	popup.classList.add("open-popup");
+// }
+// function closePopup(){
+// 	popup.classList.remove("open-popup");
+// }
 
 const popupHeader = popup.querySelector('.header'),
-	  popupContent = popup.querySelector('.content'),
-	  popupClose = popup.querySelector('.close'),
-	  popupConfirm = popup.querySelector('.confirm');
+	  popupContent = popup.querySelector('.content');
+	//   popupClose = popup.querySelector('.close'),
+	//   popupConfirm = popup.querySelector('.confirm');
 const successMessage = 'Thank you for contacting me, I have received your message, I will reply as soon as possible.',
       successHeader = 'Confirmed!',
       failedMessage = 'Sorry, there was an error sending your message.',
 	  failedHeader = 'OOOPS!!';
 
-popupClose.addEventListener('click', () => {
-	closePopup();
-});
-popupConfirm.addEventListener('click', () => {
-	closePopup();
-})
+// popupClose.addEventListener('click', () => {
+// 	closePopup();
+// });
+// popupConfirm.addEventListener('click', () => {
+// 	closePopup();
+// })
 
 let contactFormSubmit = document.querySelector('#send'); 
 
@@ -134,6 +136,9 @@ contactFormSubmit.addEventListener('click', (e) => {
 			popupContent.innerHTML = failedMessage;
 		}
 	});
+
+	contactFormSubmit.disabled=true;
 	clearForm();
 	openPopup();
+	
 })
