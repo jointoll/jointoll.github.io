@@ -81,11 +81,11 @@ navLinks.forEach(link => {
 //   });
 
 // let popup = document.getElementById("popup1");
-let popup = document.getElementById("staticBackdrop");
+let popup = document.getElementById("contactModal");
 
-// function openPopup(){
-// 	popup.classList.add("open-popup");
-// }
+function openPopup(){
+	$("#contactModal").modal("show");
+}
 // function closePopup(){
 // 	popup.classList.remove("open-popup");
 // }
@@ -130,15 +130,17 @@ contactFormSubmit.addEventListener('click', (e) => {
 		success: (data) => {
 			popupHeader.innerHTML = successHeader;
 			popupContent.innerHTML = successMessage;
+			openPopup();
 		},
 		error: (err) => {
 			popupHeader.innerHTML = failedHeader;
 			popupContent.innerHTML = failedMessage;
+			openPopup();
 		}
 	});
 
 	contactFormSubmit.disabled=true;
 	clearForm();
-	openPopup();
+	
 	
 })
