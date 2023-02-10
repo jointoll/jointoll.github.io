@@ -84,6 +84,7 @@ navLinks.forEach(link => {
 let popup = document.getElementById("contactModal");
 
 function openPopup(){
+	$("#loadingModal").modal("hide");
 	$("#contactModal").modal("show");
 }
 // function closePopup(){
@@ -116,6 +117,7 @@ const clearForm = () => {
 
 contactFormSubmit.addEventListener('click', (e) => {
 	e.preventDefault();
+	$("#loadingModal").modal("show");
 	let contactForm = {
 		name: document.querySelector('#name').value,
 		email: document.querySelector('#email').value,

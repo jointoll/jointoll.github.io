@@ -294,6 +294,13 @@ h1, h2, h3{
     color: #ffffff;
 }
 
+#loadingModal{
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* .popup .close {
   position: absolute;
   top: 0px;
