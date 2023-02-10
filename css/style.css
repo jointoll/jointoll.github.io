@@ -71,7 +71,7 @@ h1, h2, h3{
     text-align: center;
     text-transform: uppercase;
     top: 0;  
-    animation: spin_words 5s infinite;
+    animation: spin_words 10s infinite;
 }
 
 @keyframes spin_words {
