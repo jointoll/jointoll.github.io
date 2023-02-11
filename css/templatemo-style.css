@@ -277,6 +277,7 @@ footer hr
         transition: all 0.4s ease-in-out;
         text-align: center;
         margin-right: 10px;
+        font-size: 1.5rem;
     }
 .social-icon li a:hover
     {
