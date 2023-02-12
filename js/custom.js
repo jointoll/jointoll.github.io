@@ -142,8 +142,8 @@ contactFormSubmit.addEventListener('click', (e) => {
 	});
 
 	contactFormSubmit.disabled=true;
-	contactFormSubmit.style.removeProperty('background-color', '#ffffff');
-	contactFormSubmit.style.removeProperty('color', '#D43F52');
+	contactFormSubmit.style.removeProperty('background-color', '#ffffff'); //after the #send was submitted, contact form field will be emptied, and change the style back to the original style.
+	contactFormSubmit.style.removeProperty('color', '#D43F52');            //...
 	clearForm();
 	
 	
