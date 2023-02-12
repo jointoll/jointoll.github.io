@@ -304,7 +304,7 @@
 									<input type="email" class="form-control" id="email" placeholder="Email" required onkeyup="enableSubmit()">
 									<label for="email">Email</label>
 								</div>
-								<div class="form-floating">
+								<div class="form-floating mb-3">
 									<textarea class="form-control" placeholder="Message" id="message" style="height: 100px" onkeyup="enableSubmit()"></textarea>
 									<label for="message">Message</label>
 								</div>
@@ -365,10 +365,7 @@
 					</div>
 				</div>
 			</div>
-
-		
-		  
-			<!-- end contact -->
+      <!-- end contact -->
 
 			<!-- start footer -->
 			<footer>
@@ -417,7 +414,7 @@
 			let btn = document.querySelector('input[type="submit"]');
 			let isValid = true;
 			let allInputs=0;
-			for (var i = 0; i < inputs.length; i++){
+			for (var i = 0; i < inputs.length-1; i++){
 				let changedInput = inputs[i];
 				if (changedInput.value.trim() === "" || changedInput.value === null){
 						isValid = false;
@@ -428,7 +425,7 @@
 				
                	btn.disabled = !isValid;
 
-				if(allInputs == inputs.length && allInputs> 3){				//if all the contact form field are filled, the #send submit will change the style like a :hover effect.	
+				if(allInputs == inputs.length-1){				//if all the contact form field are filled, the #send submit will change the style like a :hover effect.	
 					btn.style.setProperty('background-color', '#ffffff');
 				    btn.style.setProperty('color', '#D43F52');
 				}
