@@ -142,7 +142,18 @@ contactFormSubmit.addEventListener('click', (e) => {
 	});
 
 	contactFormSubmit.disabled=true;
+	contactFormSubmit.style.removeProperty('background-color', '#ffffff');
+	contactFormSubmit.style.removeProperty('color', '#D43F52');
 	clearForm();
 	
 	
 })
+
+
+// contactFormSubmit.forEach((btnSend) => {
+//   btnSend.style.setProperty('--td-background-color', '#ffffff');
+// });
+
+
+// background: #ffffff;
+//     color: #D43F52;

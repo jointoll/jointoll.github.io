@@ -106,7 +106,7 @@
 								</div>
 								<div class="media-body">
 									<h3 class="media-heading">Shopify Store Design & Setup</h3>
-									<p>Lavish CSS Template is designed by templatemo. Download, edit and use this layout.</p>
+									<p>I specialize in e-commerce store setup on Shopify platform which provides everything you need to start selling online</p>
 								</div>
 							</div>
 						</div>
@@ -118,7 +118,7 @@
 								</div>
 								<div class="media-body">
 									<h3 class="media-heading">Web Development</h3>
-									<p>We provide a wide range of HTML5 templates for free. Please spread a word about us on social media.</p>
+									<p>I design and build web sites, e-commerce online stores and custom web solutions.</p>
 								</div>
 							</div>
 						</div>
@@ -130,7 +130,7 @@
 								</div>
 								<div class="media-body">
 									<h3 class="media-heading">UI Design &AMP; Theme customization</h3>
-									<p>Credits go to <a rel="nofollow" href="https://pixabay.com">Pixabay</a> and <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in this free CSS website template.</p>
+									<p>I can design a custom UI and UX for your Shopify Store or other web application needs, providing a better user experience and improving the look, feel, flow and information architecture of your website.</p>
 								</div>
 							</div>
 						</div>
@@ -362,12 +362,7 @@
 								</div>
 							</div>
 						</div>
-
-
-						</div>
-
-
-
+					</div>
 				</div>
 			</div>
 
@@ -416,15 +411,28 @@
 			let inputs = document.getElementsByClassName('form-control'); // Enter your class name for a required field, this should also be reflected within your form fields.
 			let btn = document.querySelector('input[type="submit"]');
 			let isValid = true;
+			let allInputs=0;
 			for (var i = 0; i < inputs.length; i++){
 				let changedInput = inputs[i];
 				if (changedInput.value.trim() === "" || changedInput.value === null){
 						isValid = false;
 						break;
 					}
+					else allInputs++;
 				}
-				btn.disabled = !isValid;
+				
+               	btn.disabled = !isValid;
+
+				if(allInputs == inputs.length && allInputs> 3){				//if all the contact form field are filled, the #send submit will change the style like a :hover effect.	
+					btn.style.setProperty('background-color', '#ffffff');
+				    btn.style.setProperty('color', '#D43F52');
+				}
+				else{
+					btn.style.removeProperty('background-color', '#ffffff');  //once any contact form field is cleared or emptied by the user the #send submit will change the style back to original style.
+				    btn.style.removeProperty('color', '#D43F52');
+				}							
 			}
+			
 			</script>
 	</body>
 </html>
