@@ -382,7 +382,7 @@
 							<ul class="social-icon">
 								<!-- <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="bi bi-facebook"></a></li>
 								<li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="bi bi-twitter"></a></li> -->
-								<li><a href="https://www.linkedin.com/in/alejandro-cabrera-460756bb/" target="_blank" rel="noopener noreferrer" class="bi bi-linkedin"></a></li>
+								<li><a href="https://www.linkedin.com/in/alejandro-cabrera-460756bb/" data-bs-container="body" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Linkedin" target="_blank" rel="noopener noreferrer" class="bi bi-linkedin"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -398,6 +398,11 @@
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<!-- custom -->
 		<script src="js/custom.js"></script>
+		<!-- Popover -->
+		<script>
+			const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+		</script>
 		
 		<script type="text/javascript">    
 			$('.js-scroll-trigger').click(function() {

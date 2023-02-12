@@ -149,11 +149,3 @@ contactFormSubmit.addEventListener('click', (e) => {
 	
 })
 
-
-// contactFormSubmit.forEach((btnSend) => {
-//   btnSend.style.setProperty('--td-background-color', '#ffffff');
-// });
-
-
-// background: #ffffff;
-//     color: #D43F52;

@@ -301,6 +301,15 @@ h1, h2, h3{
   transform: translate(-50%, -50%);
 }
 
+/* popover style */
+.popover-body{
+  padding: 5px 10px;
+  color: #D43F52;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
 
 /* .popup .close {
   position: absolute;
